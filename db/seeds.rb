@@ -8,3 +8,7 @@
 Ingredient.create(name: "lemon")
 Ingredient.create(name: "ice")
 Ingredient.create(name: "mint leaves")
+url = "https://res.cloudinary.com/spark-and-rise-ltd/image/upload/v1565952740/vqblprpmeyvadoul27fu.jpg"
+cocktail = Cocktail.new(name: 'NES')
+cocktail.remote_photo_url = url
+cocktail.save
