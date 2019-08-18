@@ -1,11 +1,14 @@
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-md-8">
+      <img class="avatar" alt="avatar" src="https://res.cloudinary.com/spark-and-rise-ltd/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1566120824/johann-trasch-b-3uxA93zUc-unsplash_uqvupc.jpg" />
       <h1>Create a new cocktail</h1>
 
       <%= simple_form_for @cocktail do |f| %>
         <%= f.input :name %>
-        <%= f.button :submit, class: 'btn btn-primary' %>
+        <%= f.input :photo %>
+        <%= f.input :photo_cache, as: :hidden %>
+        <%= f.button :submit, class: 'btn btn-flat' %>
       <% end %>
     </div>
   </div>

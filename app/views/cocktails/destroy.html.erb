@@ -1,0 +1,6 @@
+<h1><%= @cocktail.name %></h1>
+  <% @cocktail.doses.each do |dose| %>
+      <%= link_to cocktail_path(cocktail), method: :delete, data: { confirm: "Are you sure?" } do %>
+      <% end %>
+    </td>
+  </tr>
